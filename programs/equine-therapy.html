@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equine Therapy — Gunny's Ridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="equine-therapy.css">
+</head>
+<body class="bg-pattern" id="top">
+
+  <svg style="display: none;">
+    <symbol id="gunny-emblem" viewBox="0 0 200 260">
+      <path d="M 100,5 C 160,30 190,80 190,170 C 190,200 150,225 100,255 C 50,225 10,200 10,170 C 10,80 40,30 100,5 Z" fill="#D62828" stroke="#FFC800" stroke-width="3"/>
+      <path d="M 100,18 C 148,40 174,85 174,165 C 174,190 140,212 100,238 C 60,212 26,190 26,165 C 26,85 52,40 100,18 Z" fill="#0A0E0C"/>
+      <text x="100" y="55" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" text-anchor="middle">VETERAN</text>
+      <text x="100" y="70" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="11" font-weight="700" text-anchor="middle">&amp;</text>
+      <text x="100" y="85" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="12" font-weight="700" text-anchor="middle">FIRST RESPONDER</text>
+      <line x1="35" y1="150" x2="165" y2="105" stroke="#FFC800" stroke-width="3"/>
+      <polygon points="165,105 152,100 155,112" fill="#D62828"/>
+      <line x1="35" y1="105" x2="165" y2="150" stroke="#FFC800" stroke-width="3"/>
+      <polygon points="35,105 48,100 45,112" fill="#D62828"/>
+      <polygon points="100,95 130,135 70,135" fill="#FFC800"/>
+      <polygon points="80,110 105,135 55,135" fill="#E0B000"/>
+      <polygon points="120,110 145,135 95,135" fill="#E0B000"/>
+      <polyline points="70,135 100,95 130,135" fill="none" stroke="#0A0E0C" stroke-width="2"/>
+      <text x="100" y="152" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" text-anchor="middle">MISSION</text>
+      <text x="100" y="167" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">EST. 2022</text>
+      <path d="M 20,185 L 180,185 L 170,210 L 30,210 Z" fill="#FFC800" stroke="#D62828" stroke-width="2"/>
+      <text x="100" y="203" fill="#0A0E0C" font-family="'Oswald', sans-serif" font-size="16" font-weight="700" text-anchor="middle">GUNNY'S RIDGE</text>
+    </symbol>
+  </svg>
+
+  <div class="utility-bar">
+    <div class="utility-container">
+      <div class="utility-actions">
+        <a href="#admin" class="admin-link">Admin Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-logo">
+        <svg class="logo-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+        <span class="brand-title">GUNNY'S RIDGE</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-item">HOME</a></li>
+          <li><a href="../About Us/about_us.html" class="nav-item">ABOUT US</a></li>
+          <li><a href="../About Us/about_us.html#memorial" class="nav-item">MEMORIAL</a></li>
+          <li class="nav-dropdown">
+            <a href="programs-overview.html" class="nav-item active">OUR PROGRAMS <span class="dropdown-arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="support-and-healing.html">Support and Healing</a></li>
+              <li><a href="sustainable-agriculture.html">Sustainable Agriculture</a></li>
+              <li><a href="wood-working.html">Wood Working</a></li>
+              <li><a href="team-building.html">Team Building &amp; Leadership</a></li>
+              <li><a href="k9-service.html">K9 Service Dog Program</a></li>
+              <li><a href="equine-therapy.html">Equine Therapy</a></li>
+              <li><a href="animal-husbandry.html">Animal Husbandry</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html#events" class="nav-item">EVENTS</a></li>
+          <li><a href="../index.html#shop" class="nav-item">STORE</a></li>
+        </ul>
+        <div class="nav-cta-mobile">
+          <a href="../index.html#donate" class="btn btn-crimson">DONATE NOW</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta-desktop">
+        <a href="../index.html#donate" class="btn btn-crimson">DONATE NOW</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero equine-hero">
+      <div class="page-hero-container">
+        <span class="section-badge">// OUR PROGRAMS</span>
+        <h1 class="page-hero-title">EQUINE THERAPY</h1>
+        <p class="page-hero-subtitle">Ground-based horse work that rebuilds trust, presence, and emotional regulation.</p>
+      </div>
+    </section>
+
+    <section class="section-container content-body">
+      <p class="narrative-text">Horses are highly attuned to human emotion and body language. Our Equine Therapy program uses ground-based, non-riding interactions to help veterans and first responders practice calm presence, rebuild trust, and process stress in a quiet outdoor setting. Sessions emphasize safety, consent, and peer support alongside experienced facilitators.</p>
+    </section>
+
+    <section class="faq-section">
+      <h2 class="faq-title">PROGRAM FAQ</h2>
+      <details class="faq-item">
+        <summary>Do I need riding experience?</summary>
+        <p>No. Most sessions are ground-based and focus on observation, grooming, leading, and relational exercises rather than riding.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is this clinical therapy?</summary>
+        <p>Sessions are peer-supported therapeutic activities, not a substitute for licensed clinical care. We can help connect participants to professional resources when needed.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What should I wear?</summary>
+        <p>Closed-toe boots or sturdy shoes, long pants, and weather-appropriate layers. Avoid strong fragrances around the animals.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="modern-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo-block">
+          <svg class="footer-logo-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+          <div class="footer-brand-title">Gunny's Ridge</div>
+        </div>
+        <p class="footer-mission">
+          Committed to creating a serene space for healing, personal growth, and lasting connections for those who have selflessly served.
+        </p>
+        <div class="footer-contact-info">
+          <div class="contact-item">
+            <span class="contact-label">// DIRECT EMAIL</span>
+            <a href="mailto:president@gunnysridge.org" class="contact-value">president@gunnysridge.org</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">// DIRECT PHONE</span>
+            <a href="tel:4122976630" class="contact-value">412-297-6630</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">// LOCATION</span>
+            <span class="contact-value-static">PO Box 101 Burgettstown, PA. 15021</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col nav-col">
+        <h3 class="footer-heading">Quick Actions</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html#intake">› Request Support / Participant Intake</a></li>
+          <li><a href="../index.html#volunteer">› Volunteer Opportunities</a></li>
+          <li><a href="../index.html#donate">› Sponsor a Program / Donate</a></li>
+          <li><a href="../index.html#events">› Upcoming Events &amp; Calendar</a></li>
+          <li><a href="../index.html#shop">› Official Gunny's Ridge Store</a></li>
+          <li><a href="../About Us/about_us.html">› Our Mission &amp; Board of Directors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col crest-col">
+        <div class="crest-card">
+          <svg class="crest-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+          <div class="crest-tag">501(c)(3) NON-PROFIT ORGANIZATIONAL EMBLEM</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="bottom-container">
+        <p>© Copyright 2026. All rights reserved. <span class="highlight-text">Gunny's Ridge</span>.</p>
+        <a href="#top" class="back-to-top" aria-label="Back to Top">
+          <span>↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

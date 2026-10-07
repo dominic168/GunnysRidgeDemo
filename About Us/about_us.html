@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Gunny's Ridge</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="about_us-style.css">
+</head>
+<body class="bg-pattern about-page" id="top">
+
+  <!-- SVG Logo Emblem Definition -->
+  <svg style="display: none;">
+    <symbol id="gunny-emblem" viewBox="0 0 200 260">
+      <path d="M 100,5 C 160,30 190,80 190,170 C 190,200 150,225 100,255 C 50,225 10,200 10,170 C 10,80 40,30 100,5 Z" fill="#D62828" stroke="#FFC800" stroke-width="3"/>
+      <path d="M 100,18 C 148,40 174,85 174,165 C 174,190 140,212 100,238 C 60,212 26,190 26,165 C 26,85 52,40 100,18 Z" fill="#0A0E0C"/>
+      <text x="100" y="55" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" text-anchor="middle">VETERAN</text>
+      <text x="100" y="70" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="11" font-weight="700" text-anchor="middle">&amp;</text>
+      <text x="100" y="85" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="12" font-weight="700" text-anchor="middle">FIRST RESPONDER</text>
+      <line x1="35" y1="150" x2="165" y2="105" stroke="#FFC800" stroke-width="3"/>
+      <polygon points="165,105 152,100 155,112" fill="#D62828"/>
+      <line x1="35" y1="105" x2="165" y2="150" stroke="#FFC800" stroke-width="3"/>
+      <polygon points="35,105 48,100 45,112" fill="#D62828"/>
+      <polygon points="100,95 130,135 70,135" fill="#FFC800"/>
+      <polygon points="80,110 105,135 55,135" fill="#E0B000"/>
+      <polygon points="120,110 145,135 95,135" fill="#E0B000"/>
+      <polyline points="70,135 100,95 130,135" fill="none" stroke="#0A0E0C" stroke-width="2"/>
+      <text x="100" y="152" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" text-anchor="middle">MISSION</text>
+      <text x="100" y="167" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">EST. 2022</text>
+      <path d="M 20,185 L 180,185 L 170,210 L 30,210 Z" fill="#FFC800" stroke="#D62828" stroke-width="2"/>
+      <text x="100" y="203" fill="#0A0E0C" font-family="'Oswald', sans-serif" font-size="16" font-weight="700" text-anchor="middle">GUNNY'S RIDGE</text>
+    </symbol>
+  </svg>
+
+  <!-- Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="utility-container">
+      <div class="utility-actions">
+        <a href="#admin" class="admin-link">Admin Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-logo">
+        <svg class="logo-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+        <span class="brand-title">GUNNY'S RIDGE</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-item">HOME</a></li>
+          <li><a href="about_us.html" class="nav-item active">ABOUT US</a></li>
+          <li><a href="#memorial" class="nav-item">MEMORIAL</a></li>
+          <li class="nav-dropdown">
+            <a href="../programs/programs-overview.html" class="nav-item">OUR PROGRAMS <span class="dropdown-arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../programs/support-and-healing.html">Support and Healing</a></li>
+              <li><a href="../programs/sustainable-agriculture.html">Sustainable Agriculture</a></li>
+              <li><a href="../programs/wood-working.html">Wood Working</a></li>
+              <li><a href="../programs/team-building.html">Team Building &amp; Leadership</a></li>
+              <li><a href="../programs/k9-service.html">K9 Service Dog Program</a></li>
+              <li><a href="../programs/equine-therapy.html">Equine Therapy</a></li>
+              <li><a href="../programs/animal-husbandry.html">Animal Husbandry</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html#events" class="nav-item">EVENTS</a></li>
+          <li><a href="../index.html#shop" class="nav-item">STORE</a></li>
+        </ul>
+        <div class="nav-cta-mobile">
+          <a href="../index.html#donate" class="btn btn-crimson">DONATE NOW</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta-desktop">
+        <a href="../index.html#donate" class="btn btn-crimson">DONATE NOW</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Inner Hero Banner -->
+    <section class="page-hero">
+      <div class="page-hero-container">
+        <span class="section-badge">// WHO WE ARE</span>
+        <h1 class="page-hero-title">OUR MISSION &amp; STORY</h1>
+        <p class="page-hero-subtitle">
+          Dedicated to supporting military veterans, law enforcement, first responders, and their families through peer connection, therapeutic outdoor programs, and community integration.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="section-container">
+      <div class="split-narrative-grid">
+        <div class="narrative-card card-accent-border">
+          <span class="card-badge">// OUR MISSION</span>
+          <h2 class="narrative-heading">HEALING THROUGH PURPOSE &amp; PEER CONNECTION</h2>
+          <p class="narrative-text">
+            Gunny's Ridge is a 501(c)(3) non-profit organization established to provide a sanctuary for military veterans and first responders. We offer a supportive environment that fosters personal growth, mental well-being, and community reintegration through hands-on activities, outdoor therapy, and peer-to-peer engagement.
+          </p>
+          <p class="narrative-text">
+            Our goal is to reduce isolation, combat PTSD and suicide risks, and provide practical tools for everyday resilience in a serene rural setting.
+          </p>
+        </div>
+
+        <div class="narrative-card card-gold-border">
+          <span class="card-badge">// OUR VISION</span>
+          <h2 class="narrative-heading">A LASTING SANCTUARY FOR EVERY HERO</h2>
+          <p class="narrative-text">
+            We envision a country where every veteran, police officer, firefighter, paramedic, and dispatcher has immediate access to a trusted, barrier-free community network.
+          </p>
+          <p class="narrative-text">
+            By blending agricultural engagement, woodworking, K9 companionship, and group retreats, Gunny's Ridge strives to be a regional benchmark for holistic recovery and lifelong camaraderie.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORIAL SECTION: IN LOVING MEMORY OF GYSGT JOHN WILSON -->
+    <section class="memorial-section bg-pattern" id="memorial">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">// FOUNDED IN LOVING MEMORY</span>
+          <h2 class="section-title">GUNNERY SERGEANT JOHN WILSON</h2>
+          <p class="section-subtitle">
+            The heart and inspiration behind Gunny's Ridge—a leader, Marine, and combat veteran whose legacy fuels our mission to support heroes and their families.
+          </p>
+        </div>
+
+        <!-- Featured Memorial Hero Card -->
+        <div class="memorial-hero-card">
+          <div class="memorial-portrait-container">
+            <img src="../images/gunny.png" alt="Gunnery Sergeant John Wilson USMC Official Portrait" class="memorial-portrait-img">
+            <div class="portrait-badge">USMC COMBAT VETERAN</div>
+          </div>
+          <div class="memorial-hero-content">
+            <div class="memorial-rank-tag">// IN REMEMBRANCE &amp; HONOR</div>
+            <h3 class="memorial-hero-name">GySgt John "Gunny" Wilson</h3>
+            <div class="memorial-divider"></div>
+            <p class="memorial-text">
+              Gunny’s Ridge was founded in loving memory of Gunnery Sergeant John "Gunny" Wilson—a decorated Marine, devoted community leader, and steadfast friend.
+            </p>
+            <p class="memorial-text">
+              John served honorably in Operation Desert Shield/Desert Storm and Iraqi Freedom. During his service, he survived a devastating roadside bomb attack in Iraq; despite suffering severe injuries, including a broken wrist and a major leg wound, his immediate priority was rescuing and caring for his fellow Marines. For his extraordinary heroism, John was awarded the Purple Heart, the Navy Commendation Medal, and the Combat Action Ribbon, alongside more than 25 other distinguished service decorations.
+            </p>
+            <p class="memorial-text">
+              Beyond the battlefield, John's dedication to service never wavered. As Commander of American Legion Post 952 and an active firefighter with the Hookstown Volunteer Fire Department, he was a pillar of his local community. Known for his unwavering leadership, empathy, and readiness to help anyone in need, John left an indelible mark on every life he touched.
+            </p>
+            <p class="memorial-text"> 
+              Gunny’s Ridge carries forward his enduring legacy of brotherhood, selflessness, and selfless service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Origin & Background Story -->
+    <section class="story-section">
+      <div class="section-container">
+        <div class="story-layout">
+          <div class="story-content">
+            <span class="section-badge">// OUR ORIGIN</span>
+            <h2 class="section-title">BUILT BY SERVICE, DRIVEN BY PASSION</h2>
+            <p class="story-paragraph">
+              Transitioning out of active duty military service or stepping away from high-stress emergency response roles presents unique psychological and emotional hurdles. The loss of unit camaraderie and mission structure often creates feelings of detachment and dislocation.
+            </p>
+            <p class="story-paragraph">
+              Gunny's Ridge was established in Burgettstown, PA, to bridge that gap. Named in honor of Gunnery Sergeant John Wilson and the military leadership traditions of resilience and troop welfare, our ridge serves as a quiet sanctuary where service members and responders can let down their guard without judgment.
+            </p>
+
+            <div class="stat-callout-grid">
+              <div class="stat-box">
+                <span class="stat-value">501(c)(3)</span>
+                <span class="stat-label">Non-Profit Status</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Peer-Driven Mission</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-value">Burgettstown</span>
+                <span class="stat-label">PA Facility Base</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Pillars / Values -->
+    <section class="section-container">
+      <div class="section-header">
+        <span class="section-badge">// CORE GUIDING PILLARS</span>
+        <h2 class="section-title">THE VALUES THAT DRIVE OUR WORK</h2>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-number">01</div>
+          <h3 class="pillar-title">Camaraderie &amp; Trust</h3>
+          <p class="pillar-desc">Rebuilding the tight-knit bond and trust inherent to military and first responder units in a safe, non-judgmental environment.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">02</div>
+          <h3 class="pillar-title">Hands-On Purpose</h3>
+          <p class="pillar-desc">Restoring a sense of tactical focus and accomplishment through woodworking workshops, farming, and facility maintenance.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">03</div>
+          <h3 class="pillar-title">Holistic Well-being</h3>
+          <p class="pillar-desc">Supporting emotional, mental, and physical health through K9 pairings, outdoor activities, and active listening groups.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-number">04</div>
+          <h3 class="pillar-title">Family Inclusivity</h3>
+          <p class="pillar-desc">Recognizing that service impacts the entire household—extending welcoming events and support circles to spouses and children.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Board of Directors Showcase -->
+    <section class="team-wrapper" id="team-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">// ORGANIZATIONAL LEADERSHIP</span>
+          <h2 class="section-title">MEET OUR BOARD &amp; TEAM</h2>
+          <p class="section-subtitle">Click on any team category below to explore our leadership, volunteer facilitators, and community partners.</p>
+        </div>
+
+        <!-- Pure CSS Interactive Controller Inputs -->
+        <input type="radio" name="team-tab" id="tab-board" class="team-tab-input" checked>
+        <input type="radio" name="team-tab" id="tab-instructors" class="team-tab-input">
+        <input type="radio" name="team-tab" id="tab-volunteers" class="team-tab-input">
+
+        <!-- Category Selector Tiles -->
+        <div class="team-grid">
+          <!-- Tile 1: Board Leadership -->
+          <label for="tab-board" class="team-card team-card-interactive card-board-tile">
+            <div class="active-indicator-bar"></div>
+            <div class="team-avatar-placeholder">
+              <span>GR</span>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Board Leadership</h3>
+              <span class="team-role">EXECUTIVE BOARD</span>
+              <p class="team-bio">Composed of dedicated military veterans, active first responders, and passionate community advocates committed to transparent non-profit governance.</p>
+              <div class="tile-action-prompt">EXPLORE PROFILES <span class="arrow">↓</span></div>
+            </div>
+          </label>
+
+          <!-- Tile 2: Program Instructors -->
+          <label for="tab-instructors" class="team-card team-card-interactive card-instructors-tile">
+            <div class="active-indicator-bar"></div>
+            <div class="team-avatar-placeholder">
+              <span>PT</span>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Program Instructors</h3>
+              <span class="team-role">VOLUNTEER FACILITATORS</span>
+              <p class="team-bio">Experienced craftsmen, animal handlers, and peer counselors leading hands-on outdoor, carpentry, and agricultural sessions.</p>
+              <div class="tile-action-prompt">EXPLORE PROFILES <span class="arrow">↓</span></div>
+            </div>
+          </label>
+
+          <!-- Tile 3: Community Support -->
+          <label for="tab-volunteers" class="team-card team-card-interactive card-volunteers-tile">
+            <div class="active-indicator-bar"></div>
+            <div class="team-avatar-placeholder">
+              <span>CS</span>
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Community Support</h3>
+              <span class="team-role">REGIONAL VOLUNTEERS</span>
+              <p class="team-bio">Local volunteers and supporters in Western Pennsylvania maintaining facilities, driving outreach, and organizing community fundraisers.</p>
+              <div class="tile-action-prompt">EXPLORE PROFILES <span class="arrow">↓</span></div>
+            </div>
+          </label>
+        </div>
+
+        <!-- Dynamic Profile Drawers -->
+        <div class="team-profiles-container">
+
+          <!-- DRAWER 1: BOARD LEADERSHIP PROFILES -->
+          <div class="profile-drawer drawer-board">
+            <div class="drawer-header">
+              <span class="drawer-badge">// EXECUTIVE BOARD</span>
+              <h3 class="drawer-title">BOARD OF DIRECTORS</h3>
+            </div>
+            
+            <div class="profiles-detail-grid">
+              <!-- Profile 1 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>MS</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Michael Snider</h4>
+                    <span class="profile-rank">US ARMY VET // PRESIDENT</span>
+                  </div>
+                </div>
+                <div class="memorial-portrait-container">
+                  <img src="../images/michael-sinder.png" class="memorial-portrait-img">
+                </div>
+                <p class="profile-bio">
+                  MSG (Ret) Michael Snider dedicated his career to public service, spending 30 years as a U.S. Army Green Beret and 25 years as a police officer. His military service with the 5th and 19th Special Forces Groups and SOD-E included deployments to Iraq, Afghanistan, Korea, and Europe to build NATO Special Operations capabilities. In law enforcement, he served the Pittsburgh and Baldwin Borough police departments as a Narcotics Detective and accredited instructor. Today, Michael leverages his combined experience to train others, owns Patriot Power Wash and Window Cleaning, serves as National President of the Freedom Fighters Veterans MC, and manages a hobby farm. He and his wife of 27 years, Krista, have one daughter and two grandchildren.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">United States Army</span>
+                  <span class="meta-tag">Leadership</span>
+                  <span class="meta-tag">Strategic Planning</span>
+                </div>
+              </div>
+
+              <!-- Profile 2 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>TM</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Timothy Motte</h4>
+                    <span class="profile-rank">US ARMY VET // VICE PRESIDENT</span>
+                  </div>
+                </div>
+                <div class="memorial-portrait-container">
+                  <img src="../images/timothy.png" class="memorial-portrait-img">
+                </div>
+                <p class="profile-bio">
+                  MSGT Timothy E. Motte (Ret.) served in the Army and Air National Guard and completed 25 years as a Master Trooper with the Pennsylvania State Police, specializing in criminal interdiction and undercover narcotics and firearms operations with the ATF. A 9/11 Flight 93 first responder, his post-9/11 military deployments spanned over 40 countries, including two combat tours in Iraq. Tim currently lives on his farm in Hanover Township, PA, and serves as Vice President of Gunny’s Ridge, an educational farm supporting veterans and first responders.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">United States Army</span>
+                  <span class="meta-tag">PA State Police Ret.</span>
+                </div>
+              </div>
+
+              <!-- Profile 3 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>MM</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Michael Montileone, CFP®</h4>
+                    <span class="profile-rank">USAF VETERAN // TREASURER</span>
+                  </div>
+                </div>
+                <div class="memorial-portrait-container">
+                  <img src="../images/michael.jpg" class="memorial-portrait-img">
+                </div> 
+                <p class="profile-bio">
+                  Michael A. Montileone, CFP®, has been a partner at Allegheny Financial Group and Allegheny Investments since 2007, offering comprehensive financial planning to individuals and small businesses. Previously, he advised U.S. expats in Germany with Integrated Financial Planning Services and served 10 years in the U.S. Air Force Intelligence Command before receiving an honorable discharge in 1992.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">USAF Vet</span>
+                  <span class="meta-tag">Finance</span>
+                  <span class="meta-tag">Governance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DRAWER 2: PROGRAM INSTRUCTORS PROFILES -->
+          <div class="profile-drawer drawer-instructors">
+            <div class="drawer-header">
+              <span class="drawer-badge">// VOLUNTEER FACILITATORS</span>
+              <h3 class="drawer-title">PROGRAM INSTRUCTORS &amp; PEER FACILITATORS</h3>
+            </div>
+
+            <div class="profiles-detail-grid">
+              <!-- Profile 1 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>TH</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Tom "Grizz" Hendricks</h4>
+                    <span class="profile-rank">US ARMY COMBAT VET // WOODWORKING LEAD</span>
+                  </div>
+                </div>
+                <p class="profile-bio">
+                  Master carpenter and Army veteran. Tom guides hands-on timber and furniture building workshops, using creative craft to build focus and camaraderie.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">Woodworking</span>
+                  <span class="meta-tag">Army Vet</span>
+                  <span class="meta-tag">Craft Therapy</span>
+                </div>
+              </div>
+
+              <!-- Profile 2 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>MT</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Marcus Thorne</h4>
+                    <span class="profile-rank">RET. POLICE K9 OFFICER // CANINE PROGRAM</span>
+                  </div>
+                </div>
+                <p class="profile-bio">
+                  20 years in law enforcement as a K9 handler and trainer. Marcus manages service dog orientations, handler training, and animal-assisted therapy circles.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">K9 Handler</span>
+                  <span class="meta-tag">Law Enforcement</span>
+                  <span class="meta-tag">Therapy</span>
+                </div>
+              </div>
+
+              <!-- Profile 3 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>ER</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Elena Rostova</h4>
+                    <span class="profile-rank">HORTICULTURIST // AGRICULTURE DIRECTOR</span>
+                  </div>
+                </div>
+                <p class="profile-bio">
+                  Specialist in sustainable farming and regenerative soil systems. Elena leads our outdoor therapeutic agriculture and livestock management activities.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">Agriculture</span>
+                  <span class="meta-tag">First Responder Family</span>
+                  <span class="meta-tag">Outdoors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DRAWER 3: COMMUNITY SUPPORT PROFILES -->
+          <div class="profile-drawer drawer-volunteers">
+            <div class="drawer-header">
+              <span class="drawer-badge">// REGIONAL VOLUNTEERS</span>
+              <h3 class="drawer-title">COMMUNITY SUPPORT &amp; REGIONAL TEAM</h3>
+            </div>
+
+            <div class="profiles-detail-grid">
+              <!-- Profile 1 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>RA</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Rachel Adams</h4>
+                    <span class="profile-rank">REGIONAL OUTREACH COORDINATOR</span>
+                  </div>
+                </div>
+                <p class="profile-bio">
+                  Coordinates regional partnerships across Western Pennsylvania, connecting local emergency services, VA centers, and community sponsors.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">Outreach</span>
+                  <span class="meta-tag">Community</span>
+                  <span class="meta-tag">Partnerships</span>
+                </div>
+              </div>
+
+              <!-- Profile 2 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>CG</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Carlos Gutierrez</h4>
+                    <span class="profile-rank">VOLUNTEER FIREFIGHTER // LOGISTICS LEAD</span>
+                  </div>
+                </div>
+                <p class="profile-bio">
+                  Active volunteer firefighter in Washington County. Carlos leads facility workdays, event staging, equipment maintenance, and volunteer teams.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">Fire Service</span>
+                  <span class="meta-tag">Logistics</span>
+                  <span class="meta-tag">Workdays</span>
+                </div>
+              </div>
+
+              <!-- Profile 3 -->
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-avatar">
+                    <span>JB</span>
+                  </div>
+                  <div class="profile-title-block">
+                    <h4 class="profile-name">Jim &amp; Kathy Bauer</h4>
+                    <span class="profile-rank">GROUNDS &amp; EVENT HOSPITALITY LEADS</span>
+                  </div>
+                </div>
+                <p class="profile-bio">
+                  Dedicated local supporters who oversee property beautification, participant meals during weekend retreats, and seasonal community fundraisers.
+                </p>
+                <div class="profile-meta">
+                  <span class="meta-tag">Hospitality</span>
+                  <span class="meta-tag">Facility Care</span>
+                  <span class="meta-tag">Fundraising</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-banner">
+      <div class="cta-container">
+        <h2 class="cta-title">READY TO GET INVOLVED OR NEED SUPPORT?</h2>
+        <p class="cta-desc">
+          Whether you are seeking a supportive community retreat, looking to volunteer your trade skills, or wish to sponsor a hero's healing journey, we welcome you.
+        </p>
+        <div class="cta-actions">
+          <a href="../index.html#intake" class="btn btn-crimson btn-lg">REQUEST SUPPORT</a>
+          <a href="../index.html#donate" class="btn btn-gold btn-lg">DONATE TODAY</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="modern-footer">
+    <div class="footer-container">
+      <!-- Col 1: Brand & Contact Info -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo-block">
+          <svg class="footer-logo-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+          <div class="footer-brand-title">Gunny's Ridge</div>
+        </div>
+        <p class="footer-mission">
+          Committed to creating a serene space for healing, personal growth, and lasting connections for those who have selflessly served.
+        </p>
+        
+        <div class="footer-contact-info">
+          <div class="contact-item">
+            <span class="contact-label">// DIRECT EMAIL</span>
+            <a href="mailto:president@gunnysridge.org" class="contact-value">president@gunnysridge.org</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">// DIRECT PHONE</span>
+            <a href="tel:4122976630" class="contact-value">412-297-6630</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">// LOCATION</span>
+            <span class="contact-value-static">PO Box 101 Burgettstown, PA. 15021</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col nav-col">
+        <h3 class="footer-heading">Quick Actions</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html#intake">› Request Support / Participant Intake</a></li>
+          <li><a href="../index.html#volunteer">› Volunteer Opportunities</a></li>
+          <li><a href="../index.html#donate">› Sponsor a Program / Donate</a></li>
+          <li><a href="../index.html#events">› Upcoming Events &amp; Calendar</a></li>
+          <li><a href="../index.html#shop">› Official Gunny's Ridge Store</a></li>
+          <li><a href="about_us.html">› Our Mission &amp; Board of Directors</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Emblem Showcase -->
+      <div class="footer-col crest-col">
+        <div class="crest-card">
+          <svg class="crest-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+          <div class="crest-tag">501(c)(3) NON-PROFIT ORGANIZATIONAL EMBLEM</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="bottom-container">
+        <p>© Copyright 2026. All rights reserved. <span class="highlight-text">Gunny's Ridge</span>.</p>
+        <a href="#top" class="back-to-top" aria-label="Back to Top">
+          <span>↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

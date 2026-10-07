@@ -1,0 +1,4 @@
+.sh-hero {
+  background: linear-gradient(180deg, rgba(8, 12, 10, 0.7) 0%, var(--bg-dark-base) 100%),
+              url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}

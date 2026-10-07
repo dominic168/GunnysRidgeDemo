@@ -1,0 +1,4 @@
+.equine-hero {
+  background: linear-gradient(180deg, rgba(8, 12, 10, 0.7) 0%, var(--bg-dark-base) 100%),
+              url('https://images.unsplash.com/photo-1752938766449-8690be55634e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
