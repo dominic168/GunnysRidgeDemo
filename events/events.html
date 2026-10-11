@@ -802,15 +802,25 @@
 
         setEventInUrl(eventId);
 
+        var dialog = modal.querySelector('.event-modal-dialog');
+        if (dialog) dialog.scrollTop = 0;
+
         modal.hidden = false;
         document.body.classList.add('modal-open');
         activeModal = modal;
 
         if (options.focusRegister && !isPast) {
-          var registerHeader = document.querySelector('.details-register-header');
-          if (registerHeader) registerHeader.scrollIntoView({ block: 'start', behavior: 'smooth' });
-          var firstField = document.getElementById('reg-party-individual');
-          if (firstField) firstField.focus();
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              if (!dialog || !registerSection || registerSection.hidden) return;
+              var dialogRect = dialog.getBoundingClientRect();
+              var sectionRect = registerSection.getBoundingClientRect();
+              var top = dialog.scrollTop + (sectionRect.top - dialogRect.top) - 16;
+              dialog.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+              var firstField = document.getElementById('reg-party-individual');
+              if (firstField) firstField.focus({ preventScroll: true });
+            });
+          });
         } else {
           var closeBtn = modal.querySelector('.event-modal-close');
           if (closeBtn) closeBtn.focus();
