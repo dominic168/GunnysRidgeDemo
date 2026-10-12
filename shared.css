@@ -245,6 +245,13 @@ a {
   flex-shrink: 0;
 }
 
+.nav-cta-desktop .btn,
+.nav-cta-mobile .btn {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 12px 18px;
+}
+
 .nav-cta-mobile {
   display: none;
 }
