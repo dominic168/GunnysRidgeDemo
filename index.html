@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gunny's Ridge — Veteran & First Responder Mission</title>
   
@@ -50,16 +51,6 @@
     </symbol>
   </svg>
 
-  <!-- Clean Top Utility Bar -->
-  <div class="utility-bar">
-    <div class="utility-container">
-      <div class="utility-actions">
-        <a href="#admin" class="admin-link">Admin Portal</a>
-      </div>
-    </div>
-  </div>
-
-<!-- Primary Navigation Header -->
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand-logo">
@@ -77,8 +68,8 @@
       <nav class="nav-menu">
         <ul class="nav-links">
           <li><a href="index.html" class="nav-item active">HOME</a></li>
-          <li><a href="About Us/about_us.html" class="nav-item">ABOUT US</a></li>
-          <li><a href="About Us/about_us.html#memorial" class="nav-item">MEMORIAL</a></li>
+          <li><a href="about_us/about_us.html" class="nav-item">ABOUT US</a></li>
+          <li><a href="about_us/about_us.html#memorial" class="nav-item">MEMORIAL</a></li>
           <li class="nav-dropdown">
             <a href="programs/programs-overview.html" class="nav-item">OUR PROGRAMS <span class="dropdown-arrow">▼</span></a>
             <ul class="dropdown-menu">
@@ -91,16 +82,16 @@
               <li><a href="programs/animal-husbandry.html">Animal Husbandry</a></li>
             </ul>
           </li>
-          <li><a href="index.html#events" class="nav-item">EVENTS</a></li>
+          <li><a href="events/events.html" class="nav-item">EVENTS</a></li>
           <li><a href="index.html#shop" class="nav-item">STORE</a></li>
         </ul>
         <div class="nav-cta-mobile">
-          <a href="index.html#donate" class="btn btn-crimson">DONATE NOW</a>
+          <a href="donate/donate.html#give" class="btn btn-crimson">GIVE NOW</a>
         </div>
       </nav>
 
       <div class="nav-cta-desktop">
-        <a href="index.html#donate" class="btn btn-crimson">DONATE NOW</a>
+        <a href="donate/donate.html#give" class="btn btn-crimson">GIVE NOW</a>
       </div>
     </div>
   </header>
@@ -161,7 +152,7 @@
           <div class="card-badge">03 // DONORS &amp; SPONSORS</div>
           <h3 class="card-title">Sponsor A Hero</h3>
           <p class="card-desc">Fund workshop supplies, K9 pairings, or retreat costs with transparent one-time or recurring giving options.</p>
-          <a href="#donate" class="card-link">GIVE MONTHLY →</a>
+          <a href="donate/donate.html#monthly" class="card-link">SUPPORT THE MISSION →</a>
         </article>
       </div>
     </section>
@@ -174,51 +165,127 @@
           <h2 class="section-title">HANDS-ON RECOVERY PROGRAMS</h2>
         </div>
 
+        <figure class="facility-showcase">
+          <div class="facility-frame">
+            <img
+              src="images/gunnys-ridge-facility.jpg"
+              alt="Architectural vision of the Gunny's Ridge facility nestled in the Pennsylvania woodland"
+              width="1024"
+              height="565"
+              loading="lazy"
+            >
+          </div>
+          <figcaption class="facility-caption">
+            <span class="facility-label">// CAMPUS VISION</span>
+            <p>The Gunny's Ridge facility — a woodland sanctuary for healing, growth, and connection in Burgettstown, PA.</p>
+          </figcaption>
+        </figure>
+
         <div class="programs-grid">
           <div class="program-card">
-            <div class="program-icon">🤝</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="7" r="2.5"/>
+                <circle cx="15" cy="7" r="2.5"/>
+                <path d="M4.5 18.5v-1a4 4 0 0 1 4-4h1"/>
+                <path d="M19.5 18.5v-1a4 4 0 0 0-4-4h-1"/>
+                <path d="M9.5 13.5h5"/>
+              </svg>
+            </div>
             <h4>Support &amp; Peer Healing</h4>
             <p>Confidential resilience circles led by veterans and emergency responders.</p>
             <a href="programs/support-and-healing.html" class="program-link">LEARN MORE →</a>
           </div>
 
           <div class="program-card">
-            <div class="program-icon">🌾</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21V10"/>
+                <path d="M12 10c-1.5-2-2-4-2-6 2 0 3.5 1.5 4 3.5"/>
+                <path d="M12 10c1.5-2 2-4 2-6-2 0-3.5 1.5-4 3.5"/>
+                <path d="M8 14c-1.2-1.5-1.5-3-1.5-4.5 1.5 0 2.5 1 3 2.5"/>
+                <path d="M16 14c1.2-1.5 1.5-3 1.5-4.5-1.5 0-2.5 1-3 2.5"/>
+                <path d="M6 18c-1-1-1.2-2.2-1.2-3.5 1.2 0 2 .8 2.4 2"/>
+                <path d="M18 18c1-1 1.2-2.2 1.2-3.5-1.2 0-2 .8-2.4 2"/>
+              </svg>
+            </div>
             <h4>Sustainable Agriculture</h4>
             <p>Hands-on farming, livestock care, and outdoor therapy in a serene natural setting.</p>
             <a href="programs/sustainable-agriculture.html" class="program-link">LEARN MORE →</a>
           </div>
 
           <div class="program-card">
-            <div class="program-icon">🪵</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 4.5 19 9l-9.5 9.5H5v-4.5L14.5 4.5z"/>
+                <path d="M12.5 6.5 17 11"/>
+                <path d="M5 19h14"/>
+              </svg>
+            </div>
             <h4>Woodworking Workshops</h4>
             <p>Craft therapy, carpentry skill-building, and creative physical expression.</p>
             <a href="programs/wood-working.html" class="program-link">LEARN MORE →</a>
           </div>
 
           <div class="program-card">
-            <div class="program-icon">🐕</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 13c0-3.5 2.5-6 6-6h1c2.5 0 4 1.5 5 3"/>
+                <path d="M17 10v2.5a1.5 1.5 0 0 0 3 0V11"/>
+                <path d="M5 13v5a1 1 0 0 0 1 1h1"/>
+                <path d="M11 19h4l1.5-4.5"/>
+                <path d="M8 19v-3"/>
+                <circle cx="9" cy="11" r="0.75" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
             <h4>K9 Service Dog Program</h4>
             <p>Specialized service canine pairing, handler orientation, and lifetime support.</p>
             <a href="programs/k9-service.html" class="program-link">LEARN MORE →</a>
           </div>
 
           <div class="program-card">
-            <div class="program-icon">🏕️</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3"/>
+                <path d="M12 18v3"/>
+                <path d="M3 12h3"/>
+                <path d="M18 12h3"/>
+                <circle cx="12" cy="12" r="6"/>
+                <path d="M12 8.5 13.2 11.5 16.5 12 13.2 12.5 12 15.5 10.8 12.5 7.5 12 10.8 11.5Z"/>
+              </svg>
+            </div>
             <h4>Team Building &amp; Leadership</h4>
             <p>Group dynamics, outdoor challenges, and purpose-driven team bonding.</p>
             <a href="programs/team-building.html" class="program-link">LEARN MORE →</a>
           </div>
 
           <div class="program-card">
-            <div class="program-icon">🐴</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 16c0-3 2-5.5 5-6.5"/>
+                <path d="M10 9.5c1-2.5 2.5-4 4.5-4.5 1 1.5 1.2 3 .8 4.5"/>
+                <path d="M15.5 9.5c1.5.2 2.5 1 3 2.2"/>
+                <path d="M18.5 11.7c.8.3 1.5 1 1.5 2.3 0 1-.5 1.5-1.2 1.5"/>
+                <path d="M5 16v2.5"/>
+                <path d="M10 9.5v8"/>
+                <path d="M14 19c-1.5 0-3-.5-4-1.5"/>
+                <circle cx="16.2" cy="10.8" r="0.6" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
             <h4>Equine Therapy</h4>
             <p>Ground-based horse work that rebuilds trust, presence, and emotional regulation.</p>
             <a href="programs/equine-therapy.html" class="program-link">LEARN MORE →</a>
           </div>
 
           <div class="program-card">
-            <div class="program-icon">🐓</div>
+            <div class="program-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20V10l8-6 8 6v10"/>
+                <path d="M9 20v-6h6v6"/>
+                <path d="M4 20h16"/>
+                <path d="M12 4v3"/>
+              </svg>
+            </div>
             <h4>Animal Husbandry</h4>
             <p>Daily animal care routines that restore purpose, patience, and a sense of responsibility.</p>
             <a href="programs/animal-husbandry.html" class="program-link">LEARN MORE →</a>
@@ -227,7 +294,6 @@
       </div>
     </section>
 
-    <div id="events" hidden></div>
     <div id="shop" hidden></div>
   </main>
 
@@ -259,6 +325,24 @@
             <span class="contact-value-static">PO Box 101 Burgettstown, PA. 15021</span>
           </div>
         </div>
+
+        <div class="footer-social">
+          <span class="contact-label">// CONNECT</span>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100088198623517"
+                 class="social-link"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Gunny's Ridge on Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10v-2.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                </svg>
+                <span class="social-link-label">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Col 2: High-Value Quick Links -->
@@ -267,10 +351,10 @@
         <ul class="footer-links">
           <li><a href="index.html#intake">› Request Support / Participant Intake</a></li>
           <li><a href="index.html#volunteer">› Volunteer Opportunities</a></li>
-          <li><a href="index.html#donate">› Sponsor a Program / Donate</a></li>
-          <li><a href="index.html#events">› Upcoming Events &amp; Calendar</a></li>
+          <li><a href="donate/donate.html#give">› Support the Mission</a></li>
+          <li><a href="events/events.html">› Upcoming Events &amp; Calendar</a></li>
           <li><a href="index.html#shop">› Official Gunny's Ridge Store</a></li>
-          <li><a href="About Us/about_us.html">› Our Mission &amp; Board of Directors</a></li>
+          <li><a href="about_us/about_us.html">› Our Mission &amp; Board of Directors</a></li>
         </ul>
       </div>
 
@@ -287,9 +371,12 @@
     <div class="footer-bottom">
       <div class="bottom-container">
         <p>© Copyright 2026. All rights reserved. <span class="highlight-text">Gunny's Ridge</span>.</p>
-        <a href="#top" class="back-to-top" aria-label="Back to Top">
-          <span>↑</span>
-        </a>
+        <div class="footer-bottom-actions">
+          <a href="#admin" class="admin-link">Admin Portal</a>
+          <a href="#top" class="back-to-top" aria-label="Back to Top">
+            <span>↑</span>
+          </a>
+        </div>
       </div>
     </div>
   </footer>

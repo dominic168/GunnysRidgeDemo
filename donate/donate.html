@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support the Mission — Gunny's Ridge</title>
+  <meta name="description" content="Support the Mission. Stand with veterans, first responders, and their families through one-time or monthly gifts to Gunny's Ridge in Burgettstown, PA.">
+  <meta property="og:title" content="Support the Mission — Gunny's Ridge">
+  <meta property="og:description" content="Fund workshops, K9 pairings, peer circles, and retreats for veterans, first responders, and families.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="donate-style.css">
+</head>
+<body class="bg-pattern" id="top">
+
+  <svg style="display: none;">
+    <symbol id="gunny-emblem" viewBox="0 0 200 260">
+      <path d="M 100,5 C 160,30 190,80 190,170 C 190,200 150,225 100,255 C 50,225 10,200 10,170 C 10,80 40,30 100,5 Z" fill="#D62828" stroke="#FFC800" stroke-width="3"/>
+      <path d="M 100,18 C 148,40 174,85 174,165 C 174,190 140,212 100,238 C 60,212 26,190 26,165 C 26,85 52,40 100,18 Z" fill="#0A0E0C"/>
+      <text x="100" y="55" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" text-anchor="middle">VETERAN</text>
+      <text x="100" y="70" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="11" font-weight="700" text-anchor="middle">&amp;</text>
+      <text x="100" y="85" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="12" font-weight="700" text-anchor="middle">FIRST RESPONDER</text>
+      <line x1="35" y1="150" x2="165" y2="105" stroke="#FFC800" stroke-width="3"/>
+      <polygon points="165,105 152,100 155,112" fill="#D62828"/>
+      <line x1="35" y1="105" x2="165" y2="150" stroke="#FFC800" stroke-width="3"/>
+      <polygon points="35,105 48,100 45,112" fill="#D62828"/>
+      <polygon points="100,95 130,135 70,135" fill="#FFC800"/>
+      <polygon points="80,110 105,135 55,135" fill="#E0B000"/>
+      <polygon points="120,110 145,135 95,135" fill="#E0B000"/>
+      <polyline points="70,135 100,95 130,135" fill="none" stroke="#0A0E0C" stroke-width="2"/>
+      <text x="100" y="152" fill="#FFC800" font-family="'Oswald', sans-serif" font-size="13" font-weight="700" text-anchor="middle">MISSION</text>
+      <text x="100" y="167" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">EST. 2022</text>
+      <path d="M 20,185 L 180,185 L 170,210 L 30,210 Z" fill="#FFC800" stroke="#D62828" stroke-width="2"/>
+      <text x="100" y="203" fill="#0A0E0C" font-family="'Oswald', sans-serif" font-size="16" font-weight="700" text-anchor="middle">GUNNY'S RIDGE</text>
+    </symbol>
+  </svg>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="brand-logo">
+        <svg class="logo-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+        <span class="brand-title">GUNNY'S RIDGE</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-item">HOME</a></li>
+          <li><a href="../about_us/about_us.html" class="nav-item">ABOUT US</a></li>
+          <li><a href="../about_us/about_us.html#memorial" class="nav-item">MEMORIAL</a></li>
+          <li class="nav-dropdown">
+            <a href="../programs/programs-overview.html" class="nav-item">OUR PROGRAMS <span class="dropdown-arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../programs/support-and-healing.html">Support and Healing</a></li>
+              <li><a href="../programs/sustainable-agriculture.html">Sustainable Agriculture</a></li>
+              <li><a href="../programs/wood-working.html">Wood Working</a></li>
+              <li><a href="../programs/team-building.html">Team Building &amp; Leadership</a></li>
+              <li><a href="../programs/k9-service.html">K9 Service Dog Program</a></li>
+              <li><a href="../programs/equine-therapy.html">Equine Therapy</a></li>
+              <li><a href="../programs/animal-husbandry.html">Animal Husbandry</a></li>
+            </ul>
+          </li>
+          <li><a href="../events/events.html" class="nav-item">EVENTS</a></li>
+          <li><a href="../index.html#shop" class="nav-item">STORE</a></li>
+        </ul>
+        <div class="nav-cta-mobile">
+          <a href="donate.html#give" class="btn btn-crimson" aria-current="page">GIVE NOW</a>
+        </div>
+      </nav>
+
+      <div class="nav-cta-desktop">
+        <a href="donate.html#give" class="btn btn-crimson" aria-current="page">GIVE NOW</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero donate-hero">
+      <img
+        class="donate-hero-media"
+        src="../images/donate-hero-firefighter-flag-wide.jpg"
+        alt="Firefighter seated on a fire truck beside a waving American flag"
+        width="2400"
+        height="1120"
+      >
+      <div class="page-hero-container">
+        <span class="section-badge">// DONORS &amp; SPONSORS</span>
+        <h1 class="page-hero-title">SUPPORT THE MISSION</h1>
+        <p class="page-hero-subtitle">
+          Your gift keeps Gunny's Ridge running for veterans, first responders, and their families in Burgettstown, PA — workshops, peer circles, K9 support, and retreats that restore purpose.
+        </p>
+      </div>
+    </section>
+
+    <section class="donate-funnel-section" id="give" aria-labelledby="donate-panel-title">
+      <div class="donate-funnel-container">
+        <div class="donate-panel">
+          <div class="donate-panel-header" id="donate-panel-header">
+            <span class="card-badge">01 // GIVE</span>
+            <h2 id="donate-panel-title">Rallying Behind Our Military and First Responders</h2>
+            <p class="donate-panel-intro">
+              Choose one-time or monthly giving. Every dollar funds the sanctuary — not overhead slogans. Your support helps us provide essential resources and opportunities for our military and first responder community.
+            </p>
+          </div>
+
+          <form class="demo-form" id="donate-form" novalidate>
+            <fieldset class="freq-fieldset">
+              <legend>Donation frequency</legend>
+              <div class="freq-toggle" role="radiogroup" aria-label="Donation frequency">
+                <label class="freq-option">
+                  <input type="radio" name="frequency" id="freq-once" value="once" checked>
+                  <span>One-Time Giving</span>
+                </label>
+                <label class="freq-option">
+                  <input type="radio" name="frequency" id="freq-monthly" value="monthly">
+                  <span>Give Monthly</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="amount-fieldset">
+              <legend>Gift amount</legend>
+              <div class="amount-grid" role="radiogroup" aria-label="Gift amount">
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="25">
+                  <span>$25</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="50" checked>
+                  <span>$50</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="100">
+                  <span>$100</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="250">
+                  <span>$250</span>
+                </label>
+                <label class="amount-option">
+                  <input type="radio" name="amount" value="500">
+                  <span>$500</span>
+                </label>
+                <div class="amount-custom">
+                  <label class="amount-custom-toggle">
+                    <input type="radio" name="amount" id="amount-other" value="other">
+                    <span>Other Amount</span>
+                  </label>
+                  <div class="custom-amount-field" id="custom-amount-wrap">
+                    <span class="custom-amount-prefix" aria-hidden="true">$</span>
+                    <input
+                      type="number"
+                      id="custom-amount"
+                      name="customAmount"
+                      min="1"
+                      step="1"
+                      inputmode="numeric"
+                      placeholder="Enter amount"
+                      aria-label="Custom gift amount in dollars"
+                      disabled
+                    >
+                  </div>
+                  <p class="field-error" id="amount-error" hidden>Enter a gift amount of at least $1.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <p class="impact-line" id="impact-line" aria-live="polite">
+              <strong>$50</strong> covers materials for a hands-on workshop station serving veterans and first responders.
+            </p>
+
+            <div class="form-field">
+              <label for="donor-name">Full Name</label>
+              <input type="text" id="donor-name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="donor-email">Email</label>
+              <input type="email" id="donor-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="donor-phone">Phone <span class="label-optional">(optional)</span></label>
+              <input type="tel" id="donor-phone" name="phone" autocomplete="tel">
+            </div>
+
+            <div class="honor-block">
+              <span class="honor-block-title">Honor / Dedicate This Gift</span>
+              <p class="honor-block-desc">Optional — dedicate your gift to a veteran, first responder, or family member.</p>
+              <div class="form-field">
+                <label for="honor-name">In honor of <span class="label-optional">(optional)</span></label>
+                <input type="text" id="honor-name" name="honorName" autocomplete="off" placeholder="Name of the person you are honoring">
+              </div>
+              <div class="form-field">
+                <label for="honor-note">Dedication note <span class="label-optional">(optional)</span></label>
+                <textarea id="honor-note" name="honorNote" placeholder="A short message — service branch, unit, or why this gift matters…"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-crimson btn-lg" id="donate-submit">GIVE $50</button>
+            <p class="form-note">Demonstration only — no payment is processed and no data is stored or emailed.</p>
+          </form>
+
+          <div class="form-success" id="donate-success" role="status" aria-live="polite">
+            <span class="card-badge">02 // RECEIVED</span>
+            <h3>Thank you for standing with those who serve</h3>
+            <p id="donate-success-msg">
+              Your demo gift has been recorded on this page only. In production, this is where a receipt and next steps would appear.
+            </p>
+            <p id="donate-success-detail"></p>
+            <div class="form-success-actions">
+              <a href="../programs/programs-overview.html" class="btn btn-gold">EXPLORE PROGRAMS</a>
+              <a href="../index.html" class="btn btn-crimson">BACK TO HOME</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donate-impact-section" aria-labelledby="impact-section-title">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">// YOUR IMPACT</span>
+          <h2 class="section-title" id="impact-section-title">WHERE GIFTS GO TO WORK</h2>
+          <p class="section-subtitle">
+            Every gift strengthens barrier-free programs for veterans, first responders, and the families who stand with them.
+          </p>
+        </div>
+        <div class="donate-impact-grid">
+          <article class="donate-impact-item">
+            <span class="donate-impact-label">01 // PEER HEALING</span>
+            <h3>Support &amp; Peer Circles</h3>
+            <p>
+              Confidential resilience groups led by veterans and first responders — reducing isolation and rebuilding trust after high-stress careers.
+            </p>
+          </article>
+          <article class="donate-impact-item">
+            <span class="donate-impact-label">02 // K9 PATHWAY</span>
+            <h3>K9 Service Dog Program</h3>
+            <p>
+              Pairing support, training resources, and handler pathways that give veterans and first responders a trusted partner in recovery.
+            </p>
+          </article>
+          <article class="donate-impact-item">
+            <span class="donate-impact-label">03 // HANDS-ON MISSION</span>
+            <h3>Workshops &amp; Retreats</h3>
+            <p>
+              Wood shop, agriculture, equine work, and campus retreats — purpose restored through shared work on the Burgettstown sanctuary.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="donate-faq-section" aria-labelledby="donate-faq-title">
+      <div class="faq-section">
+        <h2 class="faq-title" id="donate-faq-title">GIVING FAQ</h2>
+        <details class="faq-item">
+          <summary>Is my gift tax-deductible?</summary>
+          <p>
+            Gunny's Ridge is a 501(c)(3) nonprofit organization. In a live donation flow, qualifying gifts would be tax-deductible to the extent allowed by law, and you would receive a receipt for your records.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Who do these gifts serve?</summary>
+          <p>
+            Gifts support military veterans, law enforcement, first responders, and their families — funding peer healing, hands-on programs, K9 pathways, and retreats at our sanctuary in Burgettstown, PA.
+          </p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I cancel a monthly gift?</summary>
+          <p>
+            Yes. Monthly giving is meant to be flexible. In production, you would manage or cancel a recurring gift through your receipt email or by contacting Gunny's Ridge directly. This page is a demonstration only.
+          </p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="modern-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo-block">
+          <svg class="footer-logo-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+          <div class="footer-brand-title">Gunny's Ridge</div>
+        </div>
+        <p class="footer-mission">
+          Committed to creating a serene space for healing, personal growth, and lasting connections for those who have selflessly served.
+        </p>
+        <div class="footer-contact-info">
+          <div class="contact-item">
+            <span class="contact-label">// DIRECT EMAIL</span>
+            <a href="mailto:president@gunnysridge.org" class="contact-value">president@gunnysridge.org</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">// DIRECT PHONE</span>
+            <a href="tel:4122976630" class="contact-value">412-297-6630</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">// LOCATION</span>
+            <span class="contact-value-static">PO Box 101 Burgettstown, PA. 15021</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <span class="contact-label">// CONNECT</span>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100088198623517"
+                 class="social-link"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Gunny's Ridge on Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10v-2.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1V12h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                </svg>
+                <span class="social-link-label">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-col nav-col">
+        <h3 class="footer-heading">Quick Actions</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html#intake">› Request Support / Participant Intake</a></li>
+          <li><a href="../index.html#volunteer">› Volunteer Opportunities</a></li>
+          <li><a href="donate.html#give">› Support the Mission</a></li>
+          <li><a href="../events/events.html">› Upcoming Events &amp; Calendar</a></li>
+          <li><a href="../index.html#shop">› Official Gunny's Ridge Store</a></li>
+          <li><a href="../about_us/about_us.html">› Our Mission &amp; Board of Directors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col crest-col">
+        <div class="crest-card">
+          <svg class="crest-img" viewBox="0 0 200 260"><use href="#gunny-emblem"></use></svg>
+          <div class="crest-tag">501(c)(3) NON-PROFIT ORGANIZATIONAL EMBLEM</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="bottom-container">
+        <p>© Copyright 2026. All rights reserved. <span class="highlight-text">Gunny's Ridge</span>.</p>
+        <div class="footer-bottom-actions">
+          <a href="#admin" class="admin-link">Admin Portal</a>
+          <a href="#top" class="back-to-top" aria-label="Back to Top">
+            <span>↑</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('donate-form');
+      var success = document.getElementById('donate-success');
+      var successMsg = document.getElementById('donate-success-msg');
+      var successDetail = document.getElementById('donate-success-detail');
+      var submitBtn = document.getElementById('donate-submit');
+      var impactLine = document.getElementById('impact-line');
+      var otherRadio = document.getElementById('amount-other');
+      var customWrap = document.getElementById('custom-amount-wrap');
+      var customInput = document.getElementById('custom-amount');
+      var amountError = document.getElementById('amount-error');
+      var panelHeader = document.getElementById('donate-panel-header');
+
+      var IMPACT = {
+        once: {
+          25: 'helps stock gloves, safety gear, and small tools for a campus workday.',
+          50: 'covers materials for a hands-on workshop station serving veterans and first responders.',
+          100: 'helps fund a peer resilience circle — a confidential space for those who serve.',
+          250: 'supports a day of retreat programming for a veteran or first responder at our sanctuary.',
+          500: 'helps advance a K9 pathway step — training support that pairs heroes with trusted partners.'
+        },
+        monthly: {
+          25: 'keeps refreshments and supplies ready for recurring peer circles.',
+          50: 'helps keep workshop materials stocked for peer circles and hands-on recovery programs.',
+          100: 'anchors monthly program capacity so more veterans and first responders can muster on campus.',
+          250: 'helps sustain K9 and animal-assisted support pathways month after month.',
+          500: 'underwrites ongoing retreat and workshop access for those who serve — and their families.'
+        }
+      };
+
+      function getFrequency() {
+        var el = form.querySelector('input[name="frequency"]:checked');
+        return el ? el.value : 'monthly';
+      }
+
+      function getAmount() {
+        var selected = form.querySelector('input[name="amount"]:checked');
+        if (!selected) return null;
+        if (selected.value === 'other') {
+          var n = parseInt(customInput.value, 10);
+          if (!n || n < 1) return null;
+          return n;
+        }
+        return parseInt(selected.value, 10);
+      }
+
+      function formatMoney(n) {
+        return '$' + n.toLocaleString('en-US');
+      }
+
+      function nearestImpactKey(amount) {
+        var tiers = [25, 50, 100, 250, 500];
+        var best = tiers[0];
+        for (var i = 0; i < tiers.length; i++) {
+          if (amount >= tiers[i]) best = tiers[i];
+        }
+        return best;
+      }
+
+      function updateImpact() {
+        var freq = getFrequency();
+        var amount = getAmount();
+        var displayAmount = amount || 50;
+        var key = nearestImpactKey(displayAmount);
+        var phrase = IMPACT[freq][key];
+        var freqLabel = freq === 'monthly' ? ' / month' : '';
+        impactLine.innerHTML =
+          '<strong>' + formatMoney(displayAmount) + freqLabel + '</strong> ' + phrase;
+      }
+
+      function updateSubmitLabel() {
+        var freq = getFrequency();
+        var amount = getAmount();
+        if (!amount) {
+          submitBtn.textContent = freq === 'monthly' ? 'GIVE MONTHLY' : 'SUPPORT THE MISSION';
+          return;
+        }
+        if (freq === 'monthly') {
+          submitBtn.textContent = 'GIVE ' + formatMoney(amount) + ' MONTHLY';
+        } else {
+          submitBtn.textContent = 'GIVE ' + formatMoney(amount);
+        }
+      }
+
+      function syncCustomAmount() {
+        var isOther = otherRadio.checked;
+        customWrap.classList.toggle('is-visible', isOther);
+        customInput.disabled = !isOther;
+        if (isOther) {
+          customInput.focus();
+        } else {
+          amountError.hidden = true;
+        }
+        updateImpact();
+        updateSubmitLabel();
+      }
+
+      form.addEventListener('change', function (e) {
+        if (e.target.name === 'frequency' || e.target.name === 'amount') {
+          if (e.target.name === 'amount') syncCustomAmount();
+          else {
+            updateImpact();
+            updateSubmitLabel();
+          }
+        }
+      });
+
+      customInput.addEventListener('input', function () {
+        amountError.hidden = true;
+        updateImpact();
+        updateSubmitLabel();
+      });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        amountError.hidden = true;
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        var amount = getAmount();
+        if (!amount) {
+          amountError.hidden = false;
+          if (otherRadio.checked) customInput.focus();
+          else otherRadio.focus();
+          return;
+        }
+
+        var freq = getFrequency();
+        var name = document.getElementById('donor-name').value.trim();
+        var honor = document.getElementById('honor-name').value.trim();
+        var firstName = name.split(/\s+/)[0] || 'Friend';
+
+        var freqCopy = freq === 'monthly'
+          ? 'monthly gift of ' + formatMoney(amount)
+          : 'one-time gift of ' + formatMoney(amount);
+
+        successMsg.textContent =
+          'Thank you, ' + firstName + '. Your demo ' + freqCopy +
+          ' stands with veterans, first responders, and the families we serve. No payment was processed.';
+
+        if (honor) {
+          successDetail.textContent = 'Dedication noted in honor of ' + honor + '.';
+          successDetail.hidden = false;
+        } else {
+          successDetail.textContent = '';
+          successDetail.hidden = true;
+        }
+
+        form.classList.add('is-submitted');
+        if (panelHeader) panelHeader.hidden = true;
+        success.classList.add('is-visible');
+        success.focus && success.setAttribute('tabindex', '-1');
+        success.focus();
+      });
+
+      function focusGivePanel() {
+        var hash = location.hash;
+        var once = document.getElementById('freq-once');
+        var monthly = document.getElementById('freq-monthly');
+        var panel = document.getElementById('give');
+
+        if (hash === '#monthly' && monthly) {
+          monthly.checked = true;
+        } else if ((hash === '#give' || hash === '#once') && once) {
+          once.checked = true;
+        }
+
+        updateImpact();
+        updateSubmitLabel();
+
+        if (panel && (hash === '#give' || hash === '#once' || hash === '#monthly')) {
+          panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+
+      syncCustomAmount();
+      updateImpact();
+      updateSubmitLabel();
+      focusGivePanel();
+      window.addEventListener('hashchange', focusGivePanel);
+    })();
+  </script>
+
+</body>
+</html>

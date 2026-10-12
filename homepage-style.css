@@ -155,6 +155,80 @@
   padding: 80px 0;
 }
 
+.programs-wrapper .section-header {
+  margin-bottom: 32px;
+}
+
+.facility-showcase {
+  margin: 0 0 48px;
+}
+
+.facility-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  box-shadow:
+    0 0 0 1px rgba(255, 200, 0, 0.08),
+    0 24px 48px rgba(0, 0, 0, 0.55);
+}
+
+.facility-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--brand-gold), transparent);
+  z-index: 2;
+}
+
+.facility-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(5, 8, 6, 0.45) 0%, transparent 28%, transparent 55%, rgba(5, 8, 6, 0.82) 100%),
+    linear-gradient(90deg, rgba(5, 8, 6, 0.35) 0%, transparent 18%, transparent 82%, rgba(5, 8, 6, 0.35) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.facility-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center 60%;
+  filter: saturate(0.88) contrast(1.04) brightness(0.9);
+}
+
+.facility-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.facility-label {
+  color: var(--brand-gold);
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.facility-caption p {
+  max-width: 640px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -175,8 +249,22 @@
 }
 
 .program-icon {
-  font-size: 28px;
-  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 14px;
+  color: var(--brand-gold);
+}
+
+.program-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.program-card:hover .program-icon {
+  color: var(--brand-gold-hover);
 }
 
 .program-card h4 {
@@ -223,5 +311,17 @@
 
   .ribbon-divider {
     display: none;
+  }
+
+  .facility-showcase {
+    margin-bottom: 36px;
+  }
+
+  .facility-frame img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .facility-caption p {
+    font-size: 13px;
   }
 }

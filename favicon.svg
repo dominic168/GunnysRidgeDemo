@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" role="img" aria-label="Gunny's Ridge">
+  <!-- Shield Outer Border -->
+  <path d="M 100,5 C 160,30 190,80 190,170 C 190,200 150,225 100,255 C 50,225 10,200 10,170 C 10,80 40,30 100,5 Z" fill="#D62828" stroke="#FFC800" stroke-width="6"/>
+  <!-- Inner Black Shield -->
+  <path d="M 100,18 C 148,40 174,85 174,165 C 174,190 140,212 100,238 C 60,212 26,190 26,165 C 26,85 52,40 100,18 Z" fill="#0A0E0C"/>
+
+  <!-- Crossed Arrows -->
+  <line x1="35" y1="150" x2="165" y2="105" stroke="#FFC800" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="165,105 148,98 153,116" fill="#D62828"/>
+  <line x1="35" y1="105" x2="165" y2="150" stroke="#FFC800" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="35,105 52,98 47,116" fill="#D62828"/>
+
+  <!-- Gold Mountain Peaks -->
+  <polygon points="100,88 138,138 62,138" fill="#FFC800"/>
+  <polygon points="78,108 108,138 50,138" fill="#E0B000"/>
+  <polygon points="122,108 150,138 92,138" fill="#E0B000"/>
+  <polyline points="62,138 100,88 138,138" fill="none" stroke="#0A0E0C" stroke-width="3"/>
+
+  <!-- Banner Ribbon -->
+  <path d="M 28,178 L 172,178 L 160,208 L 40,208 Z" fill="#FFC800" stroke="#D62828" stroke-width="3"/>
+</svg>
